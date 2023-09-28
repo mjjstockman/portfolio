@@ -1,16 +1,60 @@
-body { 
-    background: red;
+:root {
+  --clr-accent-400: #ccf381;
+  --clr-white-400: #eeffff;
+  --heading-bg-white: #4831d4;
+  --p-bg-white: #3d155f;
 }
 
-.grid-container {
+body { 
+    background: #4831d4;
+}
+
+.my-clr-bg-accent {
+  background: var(--clr-accent-400);
+}
+
+.my-clr-bg-white {
+  background: var(--clr-white-400);
+  color: var(--heading-bg-white);
+
+}
+
+.my-clr-bg-white > p,
+.my-clr-bg-white > h3 {
+  color: var(--p-bg-white);
+}
+
+.my-clr-bg-white > h3 {
+  color: var(--heading-bg-white);
+}
+
+.my-accent {
+  color: var(--clr-accent-400);
+} 
+
+.my-white {
+  color: var(--clr-white-400)
+}
+
+.accent-bg-p {
+  color: var(--heading-bg-white)
+}
+
+.grid-container { 
   display: grid;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
   grid-template-columns: 1fr 1fr;
   /* grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 10px;
   padding: 10px; */
 }
+
+/* WON"T WORK????????????????????????? */
+.no-gap {
+  gap: 0;
+}
+/* WON"T WORK????????????????????????? */
 
 /* REMOVE: this is to help with positioning */
 .grid-container > * {
@@ -81,4 +125,8 @@ nav {
   .menu.active {
     display: flex;
   }
+}
+
+.img-bg {
+  background: red !important;
 }
