@@ -20,3 +20,65 @@ body {
 .grid-col-span-2 {
     grid-column: span 2;
 }   
+
+nav {
+  display: none; /* Initially hide the menu on all screen sizes */
+}
+
+/* Apply this style to the navigation menu on small screens (using Tailwind CSS classes) */
+@media (max-width: 640px) {
+  nav {
+    display: block; /* Display the menu as a block on small screens */
+  }
+}
+
+/* Style for the hamburger menu button */
+.menu-toggle {
+  display: none;
+}
+
+#menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Style for the navigation menu */
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+/* Add media query to handle the responsive behavior */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .menu.active {
+    display: flex;
+  }
+}
