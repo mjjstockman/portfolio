@@ -6,7 +6,10 @@
     <script src="index.js" defer></script>
     <script src="navigation.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/6a7752b7f5.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6a7752b7f5.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="style.css" />
     <title>Matt Stockman's Portfolio</title>
@@ -15,12 +18,13 @@
     <header
       class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-4"
     >
+      <!-- nav -->
       <nav
-        class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+        class="w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
         aria-label="Global"
       >
         <div class="flex items-center justify-between">
-          <a class="my-accent flex-none text-xl font-semibold" href="#"
+          <a class="my-accent flex-none text-xl font-semibold" href="index.html"
             >Matt Stockman</a
           >
           <div class="sm:hidden">
@@ -31,11 +35,12 @@
               aria-controls="navbar-collapse-with-animation"
               aria-label="Toggle navigation"
             >
+              <!-- hamburger icon -->
               <svg
                 class="hs-collapse-open:hidden w-4 h-4"
                 width="16"
                 height="16"
-                fill="currentColor"
+                fill="#ccf381"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -54,6 +59,7 @@
                   d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
                 />
               </svg>
+              <!-- end hamburger -->
             </button>
           </div>
         </div>
@@ -85,13 +91,14 @@
           </div>
         </div>
       </nav>
+      <!-- close nav -->
     </header>
 
     <main class="grid-container mt-28">
       <h1
         class="mx-6 my-accent grid-col-span-2 text-6xl text-transform: capitalize font-bold tracking-tight md:text-6xl xl:text-7xl"
       >
-        Full Stack Developer<span class="my-white">.</span>
+        Junior Developer<span class="my-white">.</span>
       </h1>
       <p class="mx-6 my-white grid-col-span-2 mt-16 text-2xl">
         INTRO Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -114,8 +121,8 @@
         </div>
       </div>
       <section class="px-6 pt-4 my-clr-bg-white grid-col-span-2 text-2xl">
-        <h2 class="text-4xl py-16">About Me</h2>
-        <p class="pb-24">
+        <h2 class="text-4xl pt-14">About Me</h2>
+        <p class="mt-10 pb-24">
           OPENING STATEMENT: about me and who I am Lorem ipsum dolor sit amet
           consectetur, adipisicing elit. Dolorum quae, fuga optio repudiandae
           natus itaque. Fuga sunt atque possimus rerum eos vero quae sit
@@ -126,16 +133,17 @@
       </section>
 
       <!-- Cards Container -->
-      
+
       <!-- ASK????????????????????????????????? -->
-        <!-- why can't have h2 below in the div below??  -->
+      <!-- why can't have h2 below in the div below??  -->
       <!-- ASK????????????????????????????????? -->
       <h2 class="mx-6 my-accent grid-col-span-2 text-4xl my-8">Portfoilo</h2>
-      <div class="grid-col-span-2 md:h-full flex items-center">
+      <section class="grid-col-span-2 md:h-full flex items-center">
         <!-- <h2>Porfoilo</h2> -->
         <div class="px-5 pt-4 mx-auto">
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 sm:w-1/2 lg:w-1/3">
+          <!-- card -->
+          <div class="flex flex-wrap">
+            <div class="mt-6 p-4 sm:w-1/2 lg:w-1/3">
               <div
                 class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
               >
@@ -145,18 +153,46 @@
                   alt="Mockup of a fast food website, shown on different devices"
                 />
                 <div
-                  class="my-clr-bg-white p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in"
+                  class="my-clr-bg-white p-6 hover:bg-green-500 hover:text-white transition duration-300 ease-in"
                 >
-                  <h1 class="text-2xl font-semibold mb-3 ">
-                    https://ecomm-gw.herokuapp.com/
-                  </h1>
+                  <div class="flex flex-col">
+                    <a
+                      href="https://ecomm-gw.herokuapp.com/"
+                      target="_blank"
+                      class="text-base font-medium text-indigo-300 mb-1"
+                    >
+                      Get Wurst
+                    </a>
+                    <a
+                      href="https://ecomm-gw.herokuapp.com/"
+                      target="_blank"
+                      class="text-base font-medium text-indigo-300 mb-1"
+                    >
+                      View Repo <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
                   <p class="leading-relaxed mb-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Aperiam modi, expedita quos doloremque autem ipsum itaque
                     incidunt ipsam reprehenderit fuga! Dolores quisquam eius cum
                     accusamus?
                   </p>
+
                   <div class="flex items-center flex-wrap">
+                    <h4 class="font-bold">Technologies Used:</h4>
+                    <i class="p-1.5 fa-brands fa-html5"></i>
+                    <i class="p-1.5 fa-brands fa-css3"></i>
+                    <i class="p-1.5 fa-brands fa-bootstrap"></i>
+                    <i class="p-1.5 fa-brands fa-js"></i>
+                    <i class="p-1.5 fa-brands fa-python"></i>
+                    <i class="p-1.5 fa-brands fa-aws"></i>
+                    <i class="p-1.5 fa-brands fa-stripe"></i>
+                    <!-- FIND DJANGO, SQLITE, HEROKU LOGO -->
+                    <p>
+                      HTML5 , CSS, Bootstrap, JavaScript, Python, Django,
+                      SQLite, Heroku, AWS, Stripe.
+                    </p>
+
                     <a
                       class="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0"
                       >Read More
@@ -179,9 +215,22 @@
                 <div
                   class="my-clr-bg-white p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in"
                 >
-                  <h1 class="text-2xl font-semibold mb-3">
-                    https://mjjstockman.github.io/hangman/
-                  </h1>
+                  <div class="flex flex-col">
+                    <a
+                      href="https://ecomm-gw.herokuapp.com/"
+                      target="_blank"
+                      class="text-base font-medium text-indigo-300 mb-1"
+                    >
+                      Hangman
+                    </a>
+                    <a
+                      href="https://github.com/mjjstockman/hangman"
+                      target="_blank"
+                      class="text-base font-medium text-indigo-300 mb-1"
+                    >
+                      View Repo <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
                   <p class="leading-relaxed mb-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Aperiam modi, expedita quos doloremque autem ipsum itaque
@@ -189,18 +238,22 @@
                     accusamus?
                   </p>
                   <div class="flex items-center flex-wrap">
+                    <h4 class="font-bold">Technologies Used:</h4>
+                    <i class="p-1.5 fa-brands fa-html5"></i>
+                    <i class="p-1.5 fa-brands fa-css3"></i>
+                    <i class="p-1.5 fa-brands fa-js"></i>
+                    <p>HTML5 , CSS, JavaScript.</p>
                     <a
                       class="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0"
                       >Read More
-                      
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <!-- new card -->
-            <div class="mt-6  p-4 sm:w-1/2 lg:w-1/3">
+            <div class="mt-6 p-4 sm:w-1/2 lg:w-1/3">
               <div
                 class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden"
               >
@@ -212,10 +265,22 @@
                 <div
                   class="my-clr-bg-white p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in"
                 >
-                  <h2 class="text-base font-medium text-indigo-300 mb-1">
-                    https://github.com/mjjstockman/this-calc
-                  </h2>
-                  <h1 class="text-2xl font-semibold mb-3">Lakes are silent</h1>
+                  <div class="flex flex-col">
+                    <a
+                      href="https://github.com/mjjstockman/this-calc"
+                      target="_blank"
+                      class="text-base font-medium text-indigo-300 mb-1"
+                    >
+                      Calculator
+                    </a>
+                    <a
+                      href="https://github.com/mjjstockman/hangman"
+                      target="_blank"
+                      class="text-base font-medium text-indigo-300 mb-1"
+                    >
+                      View Repo <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
                   <p class="leading-relaxed mb-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Aperiam modi, expedita quos doloremque autem ipsum itaque
@@ -223,26 +288,53 @@
                     accusamus?
                   </p>
                   <div class="flex items-center flex-wrap">
+                    <h4 class="font-bold">Technologies Used:</h4>
+                    <i class="p-1.5 fa-brands fa-html5"></i>
+                    <i class="p-1.5 fa-brands fa-css3"></i>
+                    <i class="p-1.5 fa-brands fa-js"></i>
+                    <!-- FIND TAILWIND LOGO -->
+                    <p>HTML5 , CSS, Tailwind, JavaScript.</p>
+
                     <a
                       class="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0"
                       >Read More
-                    </a>          
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="mt-14 my-clr-bg-accent grid-col-span-2 p-6">
-        <h3 class="my-14 text-4xl">Find Out More</h3>
-        <p class="accent-bg-p py-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magni earum dolorum.</p>
-          CV LINK: <a href="https://docs.google.com/document/d/1FHhAiZ9tl6zdHxehIzcINUeAOkWv7qAQ/edit?usp=sharing&ouid=107129795376132887840&rtpof=true&sd=true" target="_blank">My CV</a>
-          </p>
-          <a href="https://www.linkedin.com/in/matthew-j-j-stockman/" target="_blank"><i class="mt-8 fa-2xl fa-brands fa-linkedin"></i></a>
-          <a href="www.github.com/mjjstockman" target="_blank"><i class="fa-2xl fa-brands fa-square-github"></i></a>
-      </div>
+      </section>
+      <section class="mt-14 my-clr-bg-accent grid-col-span-2 p-6">
+        <h3 class="mt-4 text-4xl">Find Out More</h3>
+        <p class="dark-text mt-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          magni earum dolorum.
+        </p>
+        <!-- <div class="flex flex-col"> -->
+        <p class="dark-text mt-4">
+          Check out my CV
+          <a
+            href="https://docs.google.com/document/d/1FHhAiZ9tl6zdHxehIzcINUeAOkWv7qAQ/edit?usp=sharing&ouid=107129795376132887840&rtpof=true&sd=true"
+            target="_blank"
+            >here
+          </a>
+        </p>
+        <p class="dark-text mt-2">Or connect on Linkein and check out my GitHub</p>
+        <div>
+        <a
+          href="https://www.linkedin.com/in/matthew-j-j-stockman/"
+          target="_blank"
+          ><i class="mr-2 mt-4 fa-2xl fa-brands fa-linkedin"></i
+        ></a>
+        <a href="www.github.com/mjjstockman" target="_blank"
+          ><i class="fa-2xl fa-brands fa-square-github"></i
+        ></a>
+        </div>
+      </section>
     </main>
+    <!-- need footer?? -->
     <footer class="grid-col-span-2 text-sm py-4">footer</footer>
   </body>
 </html>
