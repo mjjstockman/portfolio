@@ -1,20 +1,25 @@
 :root {
-  --clr-bg-alt:#FFBF46;
+  --clr-bg-alt: #ffbf46;
   --clr-accent-400: #ccf381;
   --clr-white-400: #eeffff;
   --heading-bg-white: #4831d4;
   --p-bg-white: #3d155f;
 }
 
-body { 
-    background: #4831d4;
+body {
+  background: #4831d4;
 }
 
 footer {
-  background:#3D155F;
+  background: #3d155f;
   color: var(--clr-accent-400);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap");
+
+.dark-text {
+  color: var(--p-bg-white)
+}
 .my-clr-bg-accent {
   background: var(--clr-bg-alt);
 }
@@ -22,7 +27,6 @@ footer {
 .my-clr-bg-white {
   background: var(--clr-white-400);
   color: var(--heading-bg-white);
-
 }
 
 .my-clr-bg-white > p,
@@ -36,17 +40,17 @@ footer {
 
 .my-accent {
   color: var(--clr-accent-400);
-} 
+}
 
 .my-white {
-  color: var(--clr-white-400)
+  color: var(--clr-white-400);
 }
 
 .accent-bg-p {
-  color: var(--heading-bg-white)
+  color: var(--heading-bg-white);
 }
 
-.grid-container { 
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -61,10 +65,9 @@ footer {
 /* .grid-container > * {
     border: 2px solid #333;
 } */
-
 .grid-col-span-2 {
-    grid-column: span 2;
-}   
+  grid-column: span 2;
+}
 
 nav {
   display: none; /* Initially hide the menu on all screen sizes */
